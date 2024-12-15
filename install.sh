@@ -40,9 +40,6 @@ if [[ ! $GATEWAY =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     error "Invalid gateway format"
 fi
 
-if [[ -z "$SSH_KEY" ]]; then
-    error "SSH key cannot be empty"
-fi
 
 # Create filesystems
 log "Creating filesystems..."
